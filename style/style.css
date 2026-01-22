@@ -30,10 +30,12 @@
 
 
 /* navber related style */
-.navber{
+.navber {
     justify-content: space-between;
+    display: ;
     
 }
+
 .logo h3{
     font-weight: 45px;
    
@@ -68,28 +70,215 @@
     max: width 1440px;
     margin: 0 auto;
 }
-.banner-container{
-    position: relative;
+
+.hero {
+  background-color: #1a0b2e;
+  background-image: url("../assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 23%;
+  background-size: contain;
+  padding: 40px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
-.banner-image{
-    width: 100%;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-/* .icon-container {
+
+/* Container */
+.hero-container {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
   display: flex;
-  justify-content: space-around;
-  font-size: 3rem;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
 }
 
-.icon-container > p > i {
-  transition: transform 0.5s;
+/* Circle */
+.hero-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/hero-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.icon-container > p:hover > i {
-  transform: scale(1.5);
-} */
+.hero-circle img {
+  width: 47px;
+  height: 70px;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #00ff88;
+  color: #1a0b2e;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 1000px;
+}
+
+/* Text */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.hero-desc {
+  color: #ffffff;
+}
+
+/* Buttons */
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 1000px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Gradient Button */
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #f7e93f,
+    #fb09b4,
+    #9100f8
+  );
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    90deg,
+    #9100f8,
+    #f7e93f,
+    #fb09b4
+  );
+}
+
+/* Outline Button */
+.btn-secondary {
+  background: transparent;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+}
+
+.btn-secondary:hover {
+  background: #ffffff;
+  color: #1a0b2e;
+}
+
+/* Desktop styles */
+@media (min-width: 640px) {
+  .hero {
+    padding: 101px 0;
+    background-size: cover;
+  }
+
+  .hero-circle {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 40px;
+  }
+
+  .hero-circle img {
+    width: 117px;
+    height: 175px;
+  }
+
+  .hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+
+.text{
+ color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+font-family: Inter;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+height: 400px;
+width: 800px;
+padding: 50px;
+
+
+}
+.text h3{
+font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.text-container{
+/* color: var(--#00FF88, rgba(0, 255, 136, 1)); */
+font-family: Inter;
+font-style: -#0b6139, rgba(0, 255, 136, 1);
+/* font-style: Black; */
+font-size: 48px;
+font-weight: 200px;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+height: 800px;
+width: 200px;
+ display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+
+
+
+
+.text-container p{
+color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+font-family: Inter;
+font-style: Regular;
+font-size: 16px;
+font-weight: 100px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+   
+.box-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6, 200px);
+    height: 100%;
+    width: 100%;
+    background-color: rgb(30, 8, 30);
+
+}
+.headphone-layout{
+    grid-column: span 2;
+    grid-row: span 2;
+}
