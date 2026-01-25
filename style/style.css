@@ -32,6 +32,7 @@
 
 /* navber related style */
 .navber {
+ 
   width: 71%;
   max-width: 100%;
   justify-content: space-between;
@@ -222,6 +223,10 @@
   background-color: #1a0b2e;
   width: auto;
   height: 220px;
+  background-size: contain;
+  padding: 40px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
   color: #FFFFFF;
 }
 .about h3{
@@ -241,6 +246,11 @@ line-height: 20px;
 text-align: center;
 color: #FFFFFF rgba(255, 255, 255, 1);
 }
+@media (min-width: 640px) {
+  .about {
+    padding: 101px 0;
+    background-size: cover;
+  }
 
 .text-container{
 display: flex;
@@ -262,12 +272,38 @@ color: rgb(6, 227, 6);
   text-align: center;
   line-height: 20px;
   color: #FFFFFF;
+
 }
+
+/* container */
+.container h3{
+font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+
+text-align: center;
+width: auto;
+height: 55px;
+
+
+}
+
+
 
 .container{
   background-color: #1a0b2e;
+  display: grid;
+  text-align: left;
+    gap: 10px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6, 200px);
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 120px;
 }
-.container h3{
+/* .container h3{
   font-style: Bold;
 font-size: 48px;
 font-weight: 700;
@@ -275,39 +311,89 @@ line-height: 58px;
 text-align: center;
 
 color: #FFFFFF;
+} */
+
+       
+.container-h2{
+
+
+
 }
 
 
 
 
 
-.text-container p{
-color: var(--#FFFFFF, rgba(255, 255, 255, 1));
-font-family: Inter;
-font-style: Regular;
-font-size: 16px;
-font-weight: 100px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
 
-}
 
    
-.box-container p{
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(6, 200px);
-    height: 100%;
-    width: 100%;
-    color: #FFFFFF;
 
-}
+    
+
+
 .headphone-layout{
     grid-column: span 2;
     grid-row: span 2;
+    height: 350px;
+    width: 250px;
+    box-sizing: border-box;
+    gap: 5px;
+    padding: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+
+
 }
+.device{
+grid-column: span 4;
+grid-row: span 1.5;
+width: 600px;
+height: 175px;
+background-color: aqua;
+gap: 5px;
+padding: 30px;
+border-radius: 10px;
+
+}
+.location{
+grid-column: span 4;
+grid-row: span 1.5;
+width: 600px;
+height: 200px;
+background-color: aqua;
+gap: 5px;
+padding: 30px;
+border-radius: 10px;
+
+
+}
+.resource{
+  
+grid-column: span 4;
+grid-row: span 2;
+width: 600px;
+height: 200px;
+background-color: aqua;
+gap: 5px;
+padding: 30px;
+border-radius: 10px;
+
+}
+.resource-2{
+
+grid-column: span 2;
+grid-row: span 1;
+width: 300px;
+height: 200px;
+background-color: aqua;
+gap: 5px;
+padding: 30px;
+border-radius: 10px;
+}
+
+
+
+/* iframe */
 .video{
   background-color: #1a0b2e;
   color: #FFFFFF;
@@ -317,6 +403,7 @@ font-size: 40px;
 font-weight: 600px;
 line-height:58px;
 max-width: 100%;
+width: 100%;
 
  
 }
@@ -325,7 +412,7 @@ display: grid;
 grid-template-columns: repeat(3,1fr);
 justify-content: flex-start;
 align-items: center;
-gap: 120;
+gap: 15px;
 max-width: 100%;
 width: auto;
 height: 400px;
@@ -352,7 +439,7 @@ color: #FFFFFF;
 padding: 10px;
 }
 
-
+/* last-content */
 
 .content h3{
 background-color: #1a0b2e;
@@ -371,6 +458,7 @@ color: #FFFFFF;
   height: 200px;
   width: 200px;
   justify-content: space-between;
+
 }
 .host h5{
   background-color: #1a0b2e;
@@ -378,7 +466,7 @@ color: #FFFFFF;
 font-size: 32px;
 font-weight: 700;
 line-height: 39px;
-
+box-sizing: border-box;
 justify-content: space-between;
 display: flex;
 
@@ -390,6 +478,8 @@ color: #FFFFFF;
   color: #FFFFFF;
   height: 280px;
   justify-content: space-between;
+  
+  box-sizing: border-box;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
@@ -400,8 +490,10 @@ line-height: 24px;
   grid-template-columns: repeat(4,1fr);
   align-items: center;
   background-color: #1a0b2e;
+  box-sizing: border-box;
+  
  
- 
+ /* footer  */
 }
 .footer-container{
   background-color: #1a0b2e;
@@ -419,7 +511,6 @@ line-height: 24px;
 .footer-container h2{
  color: #FFFFFF;
   text-align: center;
-   text-align: center;
   font-style: Bold;
 font-size: 40px;
 font-weight: 600px;
@@ -427,5 +518,17 @@ font-weight: 600px;
 .footer-img{
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  color: #FFFFFF;
+
+  text-align: center;
   
 }
+.footer-img , p{
+  text-align: center;
+  color: #FFFFFF;
+}
+/* 
+.footer-container p{
+  text-align: center;
+  color: #FFFFFF;
+} */
