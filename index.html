@@ -12,22 +12,30 @@
 <link rel="stylesheet" href="tailwind.init.css">
 </head>
 <body>
-    <header class="flex flex-col md:flex-row items-center justify-between px-6 py-4 max-w-7xl mx-auto">
-  
-  <div class="text-2xl font-bold">
-    Tech<span class="text-purple-600">Wave</span>
+    <header class="bg-purple-900">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-white">
+      Tech<span class="text-purple-400">Wave</span>
+    </h1>
+
+    <!-- Nav Links -->
+    <nav class="hidden md:flex gap-8 text-white font-medium">
+      <a href="#" class="hover:text-purple-300 transition">About</a>
+      <a href="#" class="hover:text-purple-300 transition">Episodes</a>
+      <a href="#" class="hover:text-purple-300 transition">Host</a>
+    </nav>
+
+    <!-- Gradient Button -->
+    <button class="px-6 py-2 rounded-full text-white font-semibold 
+      bg-gradient-to- from-yellow-400 via-pink-500 to-purple-600 
+      hover:scale-105 transition duration-300">
+      Subscribe
+    </button>
+
   </div>
-
-  <nav class="flex gap-6 my-4 md:my-0">
-    <a href="#" class="hover:text-purple-600">About</a>
-    <a href="#" class="hover:text-purple-600">Episodes</a>
-    <a href="#" class="hover:text-purple-600">Host</a>
-  </nav>
-
-  <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">
-    Subscribe
-  </button>
-  </header>
+</header>
   
         <section class="hero">
   <div class="hero-container">
@@ -92,219 +100,70 @@
         </div>
     </div>
 </section>
-    
+   <section class="why">
   <h2 class="section-title">Why Choose TechWave</h2>
 
-  <div class="features">
-    <div class="headphone-layout">
-      <img src="assets/headphone.png" alt="">
+  <div class="grid">
+
+    <!-- Premium Audio -->
+    <div class="card premium">
+      <img src="assets/headphone.png" alt="Premium Audio" class="icon-img">
       <h3>Premium Audio Quality</h3>
-      <p>Experience crystal-clear sound with professional-grade recording equipment and expert engineering.</p>
+      <p>
+        Experience crystal-clear sound with professional-grade recording
+        equipment and expert audio engineering. Every episode is mastered
+        for optimal listening across all devices and platforms.
+      </p>
     </div>
 
-    <div class="device">
-      <img src="assets/device.png" alt="">
+    <!-- Mobile Friendly -->
+    <div class="card mobile">
+      <img src="assets/device.png" alt="device Friendly" class="icon-img">
       <h3>Mobile Friendly</h3>
-      <p>Listen on the go with seamless mobile experience and offline downloads.</p>
+      <p>
+        Listen on the go with seamless mobile experience and offline downloads.
+      </p>
     </div>
 
-    <div class="location">
-      <img src="assets/location.png" alt="">
+    <!-- Global Community -->
+    <div class="card global">
+     <img src="assets/location.png" alt="location Friendly" class="icon-img">
       <h3>Global Community</h3>
-      <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
-    </div>
-    <div class="resource">
-      <img src="assets/resource.png" alt="">
-      <h3>Global Community</h3>
-      <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
+      <p>
+        Connect with tech enthusiasts from over 120 countries worldwide.
+      </p>
     </div>
 
-    <div class="Interview">
-      <img src="assets/zap-fast.png" alt="">
+    <!-- Exclusive Interviews -->
+    <div class="card exclusive">
+      <img src="assets/zap-fast.png" alt="Interviews Friendly" class="icon-img">
       <h3>Exclusive Interviews</h3>
-      <p>Get access to industry leaders, startup founders, and innovators.</p>
-    </div>
-  </div>
-
-
-  <!-- Why Choose -->
-  <!-- <section class="bg-purple-950 px-6 lg:px-20 py-16 pt-2 mt-2">
-    <h2 class="text-4xl md:text-3xl font-semibold text-center mb-18 mt-4">
-         Why Choose TechWave
-    </h2>
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-
-    <div class="text-center md:text-left">
-      <img src="assets/headphone.png" class="w-16 mx-auto md:mx-0 mb-6 ">
-      <h4 class="font-semibold text-xl mb-4">Premium Audio Quality</h4>
-      <p class="text-gray-600">Crystal-clear sound with professional mastering.</p>
+      <p>
+        Get unprecedented access to industry titans, startup founders, and tech
+        visionaries. Our host secures exclusive conversations you won’t find
+        anywhere else.
+      </p>
     </div>
 
-    <div class="text-center md:text-left">
-      <img src="assets/device.png" class="w-16 mx-auto md:mx-0 mb-4">
-      <h4 class="font-semibold text-xl mb-2">Mobile Friendly</h4>
-      <p class="text-gray-600">Seamless listening across all devices.</p>
-    </div>
-    <div class="text-center md:text-left">
-      <img src="assets/location.png" class="w-16 mx-auto md:mx-0 mb-3">
-      <h4 class="font-semibold text-xl mb-4">Mobile Friendly</h4>
-      <p class="text-gray-600">Seamless listening across all devices.</p>
-    </div>
-    <div class="text-center md:text-left">
-      <img src="assets/zap-fast.png" class="w-16 mx-auto md:mx-0 mb-2">
-      <h4 class="font-semibold text-xl mb-1.5">Mobile Friendly</h4>
-      <p class="text-gray-600">Seamless listening across all devices.</p>
-    </div>
-    <div class="text-center md:text-left">
-      <img src="assets/resource.png" class="w-16 mx-auto md:mx-0 mb-3">
-      <h4 class="font-semibold text-xl mb-3.5">Mobile Friendly</h4>
-      <p class="text-gray-600">Seamless listening across all devices.</p>
+    <!-- Rich Resources -->
+    <div class="card resources">
+     <img src="assets/resource.png" alt="resource Friendly" class="icon-img">
+      <h3>Rich Resources</h3>
+      <p>
+        Access show notes, transcripts, and additional learning materials
+        for every episode.
+      </p>
     </div>
 
   </div>
-  </section>
- -->
-
-      
-
-  <!-- Featured Episodes -->
-  <!-- <section class="px-6 lg:px-20 py-16">
-    <h2 class="text-2xl md:text-3xl font-semibold text-center mb-12">
-      Featured Episodes
-    </h2>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="card-bg rounded-2xl overflow-hidden">
-        <img src="https://picsum.photos/400/250?1" class="w-full h-48 object-cover" />
-        <div class="p-5">
-          <h3 class="font-semibold mb-2">The Future of AI</h3>
-          <p class="text-gray-400 text-sm">
-            Exploring artificial intelligence advancements.
-          </p>
-        </div>
-      </div>
-
-      <div class="card-bg rounded-2xl overflow-hidden">
-        <img src="https://picsum.photos/400/250?2" class="w-full h-48 object-cover" />
-         <div class="p-5">
-          <h3 class="font-semibold mb-2">Building Startups</h3>
-          <p class="text-gray-400 text-sm">
-            Lessons from successful tech founders.
-          </p> -->
-        <!-- </div>
-      </div> -->
-
-        <!-- <section class="">
-          <h2>Why Choose TechWave</h2>
-         
-          <div class="container">
-            <div class="headphone-layout">
-            <img src="./assets/headphone.png" alt="">
-            <h4>Premium Audio Quality</h4>
-            <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-            </div>
-            <div class="device">
-            <img src="./assets/device.png" alt="">
-            <h4>Mobile Friendly</h4>
-            <p>Listen on the go with seamless mobile experience and offline downloads.
-</p>
-            </div>
-            <div class="location">
-            <img src="./assets/location.png" alt="">
-
-            
-            <h4>Global Community</h4>
-            <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
-            </div>
-            <div class="resource">
-            <img src="./assets/resource.png" alt="">
-            <h4>Exclusive Interviews</h4>
-            <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
-            </div>
-            <div class="resource-2">
-            <img src="./assets/resource.png" alt="">
-            <h4>Rich Resources</h4>
-            <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
-            </div>
-            
-
-          </div> -->
-
-        <!-- </section> -->
-         
-         <!-- <section class="bg-purple-900 text-white py-16 px-6">
-
-        <!- Title -->
-        <!-- <h2 class="text-3xl font-bold text-center mb-12">
-        Why Choose TechWave
-        </h2>
-
-      Cards Container -->
-      <!-- <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-
-         Card 1 -->
-       <!-- <div class="bg-purple-800 p-6 rounded-2xl">
-      <img src="./assets/headphone.png" class="w-10 mb-4" alt="">
-            <h4 class="text-lg font-semibold mb-2">
-        Premium Audio Quality
-      </h4>
-      <p class="text-sm text-gray-300"> -->
-        <!-- Experience crystal-clear sound with professional-grade recording equipment. -->
-      <!-- </p>
-     </div> --> 
-
-     <!-- Card 2 -->
-     <!-- <div class="bg-purple-800 p-6 rounded-2xl">
-      <img src="./assets/device.png" class="w-10 mb-4" alt="">
-      <h4 class="text-lg font-semibold mb-2">
-        Mobile Friendly
-      </h4>
-      <p class="text-sm text-gray-300">
-        Listen on the go with seamless mobile experience.
-      </p>
-     </div> -->
-     <!-- Card 3 -->
-     <!-- <div class="bg-purple-800 p-6 rounded-2xl">
-      <img src="./assets/location.png" class="w-10 mb-4" alt="">
-      <h4 class="text-lg font-semibold mb-2">
-        Global Community
-      </h4>
-      <p class="text-sm text-gray-300">
-        Connect with tech enthusiasts from over 120 countries.
-      </p>
-    </div> -->
-
-    <!-- Card 4 -->
-    <!-- <div class="bg-purple-800 p-6 rounded-2xl">
-      <img src="assets/zap-fast.png" class="w-10 mb-4" alt="">
-       <h4 class="text-lg font-semibold mb-2">
-        Rich Resources
-      </h4>
-      <p class="text-sm text-gray-300">
-        Access show notes, transcripts, and learning materials.
-      </p>
-    </div> --> 
-    <!-- Card 5 -->
-    <!-- <div class="bg-purple-800 p-6 rounded-2xl">
-      <img src="assets/resource.png" class="w-10 mb-4" alt="">
-       <h4 class="text-lg font-semibold mb-2">
-        Rich Resources
-      </h4>
-      <p class="text-sm text-gray-300">
-        Access show notes, transcripts, and learning materials.
-      </p>
-    </div> -->
-
-  <!-- </div>
-
-</section> -->
+</section>
 
         <section class="bg-purple-950 px-6 lg:px-20 py-16 pt-2 mt-2">
+
+          <div>
              <h2 class="text-white text-3xl md:text-4xl font-bold text-center mb-12">
                Featured Episodes</h2>
     
-
-          </div>
           <div class="iframe">
             <div>
            <iframe src="https://www.youtube.com/embed/PJb_ZMbeGug?si=4Q2IMNsQYWlyC4zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -320,9 +179,9 @@
            <img src="assets/icon.png" alt=""> 
 
            </div>
+
            <div>
-
-
+ 
            <iframe src="https://www.youtube.com/embed/S-gIFz-uYNw?si=06KAv0Z1HPbVGLQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
            <h5>Career Growth in Tech: A Roadmap</h5>
            <p>Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
@@ -330,6 +189,8 @@
            </div>
 
           </div>
+          </div>
+
         </section>
 
 <section class="host-section bg-purple-950">
